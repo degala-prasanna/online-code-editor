@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Live Code Editor</title>
+     <link rel="stylesheet" href="style.css">
+     <script src="main.js"></script>
+     <script src="https://kit.fontawesome.com/25c1b88d85.js" crossorigin="anonymous"></script>
+ </head>
+ 
+ <body>
+     <div class="code-editor">
+         <div class="code">
+             <div class="code-area">
+                 <label><i class="fa-brands fa-html5"></i>HTML</label>
+                 <textarea id="html-code" onkeyup="run()"></textarea>
+             </div>
+             <div class="code-area">
+                 <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
+                 <textarea id="css-code" onkeyup="run()"></textarea>
+             </div>
+             <div class="code-area" >
+                 <label><i class="fa-brands fa-square-js"></i>JS</label>
+                 <textarea id="js-code" onkeyup="run()"></textarea>
+             </div>
+         </div>
+         <div class="result">
+            <label><i class="fa-solid fa-play"></i>Output</label>
+         <iframe id="output"></iframe>
+         </div>
+     </div>
+ </body>
+ 
+ </html>
